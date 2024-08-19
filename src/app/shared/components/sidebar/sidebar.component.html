@@ -3,8 +3,9 @@
   <hr class="text-white">
 
   <div class="list-group list-reset">
-    <button class="list-group-item list-group-item-action">
-      Valorant
+    <button *ngFor="let tag of tags" class="list-group-item list-group-item-action">
+      {{tag | titlecase}}
+      <!-- * Son pipe que sirven para alterar la visualizacion del valor sin alterara la valor como tal -->
     </button>
   </div>
 </div>
