@@ -4,7 +4,7 @@
 
   <div class="list-group list-reset">
     <button *ngFor="let tag of tags"
-      
+      (click)="searchTag(tag)"
       class="list-group-item list-group-item-action">
       {{tag | titlecase}}
       <!-- * Son pipe que sirven para alterar la visualizacion del valor sin alterara la valor como tal -->
