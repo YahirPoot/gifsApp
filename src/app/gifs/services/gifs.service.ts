@@ -32,6 +32,7 @@ export class GifsService {
     if (tag.length === 0) return;
     this.organizedHistory(tag);
 
+    //Uso de HttpParams para enviar parametros en la peticion (Uso del HttpClientModulo de Angular)
     const params = new HttpParams()
       .set('api_key', this.apiKey)
       .set('limit', '10')
